@@ -1,7 +1,239 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Ka Leong Cheng</title>
+  
+  <meta name="author" content="Ka Leong Cheng">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Ka Leong Cheng</name>
+              </p>
+              <p>
+                I am a Ph.D. student at <a href="https://cqf.io/lab.html">Visual Intelligence Lab</a>, part of the Department of Computer Science and Engineering at the Hong Kong University of Science and Technology (HKUST). My supervisor is <a href="https://cqf.io">Dr. Qifeng Chen</a>. 
+              </p>
+              <p>
+                I receive my BEng degree in Computer Science and Engineering and BBA degree in General Business Management at the Hong Kong University of Science and Technology (HKUST) in 2020.
+              </p>
+              <!-- <p>
+                At Google I've worked on <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://www.google.com/get/cardboard/jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://www.youtube.com/watch?v=JSnB06um5r4">Glass</a>, and <a href="https://www.matthewtancik.com/nerf">NeRF</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I've received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a> and the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
+              </p> -->
+              <p style="text-align:center">
+                <a href="mailto:klchengad@connect.ust.hk">Email</a> &nbsp/&nbsp
+                <!-- <a href="data/KaLeongCheng-CV.pdf">CV</a> &nbsp/&nbsp -->
+                <a href="https://scholar.google.com/citations?user=eNtNT2gAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/felixcheng97/">Github</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/felixcheng97/">LinkedIn</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/ka_leong_cheng.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/ka_leong_cheng_circle.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I am interested in low-level vision, computational photography, image compression, and invertibility problems.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="iicnet_stop()" onmouseover="iicnet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img class="two" src='images/cheng_iccv_2021_iicnet_before.jpg'>
+                <div class="three" id='iicnet_image'><video width=100% height=100% muted autoplay loop>
+                <source src="images/cheng_iccv_2021_iicnet_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
+              <script type="text/javascript">
+                function iicnet_start() {
+                  document.getElementById('iicnet_image').style.opacity = "1";
+                }
+                function iicnet_stop() {
+                  document.getElementById('iicnet_image').style.opacity = "0";
+                }
+                iicnet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/felixcheng97/IICNet">
+                <papertitle>IICNet: A Generic Framework for Reversible Image Conversion</papertitle>
+              </a>
+              <br>
+              <strong>Ka Leong Cheng*</strong>,
+              <a href="https://scholar.google.com/citations?user=XB8oP_gAAAAJ&hl=en">Yueqi Xie*</a>,
+              <a href="https://cqf.io">Qifeng Chen</a>
+              <br>
+              International Conference on Computer Vision (ICCV), 2021
+              <br>
+              <a href="https://arxiv.org/abs/2109.04242">arXiv</a> /
+              <a href="data/cheng_iccv_2021_iicnet.bib">bibtex</a> /
+              <a href="https://github.com/felixcheng97/IICNet">code</a> /
+              <a href="https://www.youtube.com/watch?v=Dji2iC_hUfo&t=225s">presentation</a> /
+              <a href="https://klchengad.student.ust.hk/research/iccv-iicnet/iicnet-supp.pdf">supp</a> /
+              <a href="https://www.youtube.com/watch?v=Hwj05IrdUAo">supp video</a>
+              <p></p>
+              <p>We present the first generic framework for various reversible image conversion (RIC) tasks.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="enhanced_stop()" onmouseover="enhanced_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="three" id='enhanced_image'>
+                  <img class="two" src='images/xie_acmmm_2021_after.jpg' width="160">
+                </div>
+                <img class="two" src='images/xie_acmmm_2021_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function enhanced_start() {
+                  document.getElementById('enhanced_image').style.opacity = "1";
+                }
+                function enhanced_stop() {
+                  document.getElementById('enhanced_image').style.opacity = "0";
+                }
+                enhanced_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/xyq7/InvCompress">
+                <papertitle>Enhanced Invertible Encoding for Learned Image Compression</papertitle>
+              </a>
+              <br>
+              <a href="https://scholar.google.com/citations?user=XB8oP_gAAAAJ&hl=en">Yueqi Xie*</a>,
+              <strong>Ka Leong Cheng*</strong>,
+              <a href="https://cqf.io">Qifeng Chen</a>
+              <br>
+              ACM International Conference on Multimedia (ACM MM), 2021
+              <br>
+              <font color="red"><strong>Full Oral Presentation (9% acceptance rate)</strong></font>
+              <br>
+              <a href="https://arxiv.org/abs/2108.03690">arXiv</a> /
+              <a href="data/xie_acmmm_2021_enhanced.bib">bibtex</a> /
+              <a href="https://github.com/xyq7/InvCompress">code</a>
+              <p></p>
+              <p>We present an enhanced Invertible Encoding Network for learned image compression.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="fully_stop()" onmouseover="fully_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img class="two" src='images/cheng_eccv_2020_fully.jpg'>
+                <div class="three" id='fully_image'><video width=100% height=100% muted autoplay loop>
+                <source src="images/cheng_eccv_2020_fully.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+              </div>
+              <script type="text/javascript">
+                function fully_start() {
+                  document.getElementById('fully_image').style.opacity = "1";
+                }
+                function fully_stop() {
+                  document.getElementById('fully_image').style.opacity = "0";
+                }
+                fully_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2007.12402">
+                <papertitle>Fully Convolutional Networks for Continuous Sign Language Recognition</papertitle>
+              </a>
+              <br>
+              <strong>Ka Leong Cheng</strong>,
+              <a href="https://scholar.google.com/citations?user=7wGwYg4AAAAJ&hl=en">Zhaoyang Yang</a>,
+              <a href="https://cqf.io">Qifeng Chen</a>,
+              <a href="https://scholar.google.com/citations?user=nFhLmFkAAAAJ&hl=en">Yu-Wing Tai</a>
+              <br>
+              European Conference on Computer Vision (ECCV), 2020
+              <br>
+              <a href="https://arxiv.org/abs/2007.12402">arXiv</a> /
+              <a href="data/cheng_eccv_2020_fully.bib">bibtex</a>
+              <p></p>
+              <p>We present a fully convolutional network for online sign language recognition (SLR). This work was done during my research intern in Tencent YouTu X-Lab.
+              </p>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Experiences</heading>
+                <ul>         
+                  <li>Junior Research Assistant (supervised by <a href="https://cqf.io">Dr. Qifeng Chen</a>), HKUST, 2020</li>
+                  <li>Research Intern (supervised by <a href="https://scholar.google.com/citations?user=nFhLmFkAAAAJ&hl=en">Dr. Yu-Wing Tai</a>), Tencent YouTu X-Lab, 2019</li>
+                  <li>PKU Summer School International, Peking University, 2018</li>
+                  <li>Undergraduate Outbound Exchange Program, ETH Zürich, 2018</li>
+                  <li>Penn Summer Global Institute, University of Pennsylvania, 2017</li>
+                </ul>              
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Honors and Awards</heading>
+                <ul>         
+                  <li>Hong Kong PhD Fellowship Award, 2021-2024</li>
+                  <li>Hong Kong University of Science and Technology Academic Achievement Medal, 2020</li>
+                  <li>Technology and Management Elite Student Scholarship, 2019</li>
+                  <li>High Fashion Charitable Foundation Exchange Scholarship, 2017</li>
+                  <li>Shanghai Commercial Bank Scholarship, 2016</li>
+                  <li>University's Scholarship Scheme for Continuing Undergraduate Students, 2016, 2018, 2019</li>
+                </ul>              
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Teaching Assistants</heading>
+                <ul>
+                  <li>COMP 3111: Software Engineering (Fall 2021)</li>     
+                  <li>COMP 1001: Exploring Multimedia and Internet Computing (Spring 2021)</li>
+                </ul>              
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                Thank You &#11088; &nbsp<a href="https://github.com/jonbarron/jonbarron_website">Dr. Jon Barron</a> &#11088;
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
 </body>
+
 </html>
+
