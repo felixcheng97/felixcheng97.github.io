@@ -109,6 +109,9 @@ name {
   width: 160px;
   height: 160px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .two {
@@ -122,6 +125,9 @@ name {
   left: 0;
   right: 0;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .three {
@@ -131,6 +137,9 @@ name {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .fade {

@@ -23,7 +23,7 @@
                 <name>Ka Leong Cheng</name>
               </p>
               <p>
-                I am a Ph.D. student at <a href="https://cqf.io/lab.html">Visual Intelligence Lab</a>, part of the Department of Computer Science and Engineering at the Hong Kong University of Science and Technology (HKUST). My supervisor is <a href="https://cqf.io">Dr. Qifeng Chen</a>. 
+                I am a Ph.D. candidate at <a href="https://cqf.io/lab.html">Visual Intelligence Lab</a>, part of the Department of Computer Science and Engineering at the Hong Kong University of Science and Technology (HKUST). My supervisor is <a href="https://cqf.io">Dr. Qifeng Chen</a>. 
               </p>
               <p>
                 I receive my BEng degree in Computer Science and Engineering and BBA degree in General Business Management at the Hong Kong University of Science and Technology (HKUST) in 2020.
@@ -55,6 +55,46 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="optimizing_stop()" onmouseover="optimizing_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one" style="text-align:center;">
+                <div class="two" id='optimizing_image'>
+                    <img src='images/cheng_eccv_2022_after.png' width=100%></div>
+                <img src='images/cheng_eccv_2022_before.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function optimizing_start() {
+                  document.getElementById('optimizing_image').style.opacity = "1";
+                }
+                function optimizing_stop() {
+                  document.getElementById('optimizing_image').style.opacity = "0";
+                }
+                optimizing_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/felixcheng97/DenoiseCompression">
+                <papertitle>Optimizing Image Compression via Joint Learning with Denoising</papertitle>
+              </a>
+              <br>
+              <strong>Ka Leong Cheng*</strong>,
+              <a href="https://scholar.google.com/citations?user=XB8oP_gAAAAJ&hl=en">Yueqi Xie*</a>,
+              <a href="https://cqf.io">Qifeng Chen</a>
+              <br>
+              European Conference on Computer Vision (ECCV), 2022
+              <br>
+              <a href="https://arxiv.org/abs/2207.10869">arXiv</a> /
+              <a href="data/cheng_eccv_2022_optimizing.bib">bibtex</a> /
+              <a href="https://github.com/felixcheng97/DenoiseCompression">code</a>
+              <!-- <a href="">presentation</a> /
+              <a href="">supp</a> /
+              <a href="">supp video</a> -->
+              <p></p>
+              <p>We optimize the image compression methods on noisy images via joint learning with denoising.
+              </p>
+            </td>
+          </tr>
 
           <tr onmouseout="iicnet_stop()" onmouseover="iicnet_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -101,10 +141,9 @@
           <tr onmouseout="enhanced_stop()" onmouseover="enhanced_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="three" id='enhanced_image'>
-                  <img class="two" src='images/xie_acmmm_2021_after.jpg' width="160">
-                </div>
-                <img class="two" src='images/xie_acmmm_2021_before.jpg' width="160">
+                <div class="two" id='enhanced_image'>
+                    <img src='images/xie_acmmm_2021_after.jpg' width="160"></div>
+                <img src='images/xie_acmmm_2021_before.jpg' width="160">
               </div>
               <script type="text/javascript">
                 function enhanced_start() {
@@ -199,6 +238,7 @@
             <td>
               <heading>Honors and Awards</heading>
                 <ul>         
+                  <li>HKUST RedBird Academic Excellence Award for Continuing PhD Students, 2022</li>
                   <li>Hong Kong PhD Fellowship Award, 2021-2024</li>
                   <li>Hong Kong University of Science and Technology Academic Achievement Medal, 2020</li>
                   <li>Technology and Management Elite Student Scholarship, 2019</li>
