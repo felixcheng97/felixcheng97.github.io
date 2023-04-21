@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -56,12 +56,60 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="hyperthumbnail_stop()" onmouseover="hyperthumbnail_start()">
+            <td style="padding:20px;width:25%;vertical-align:bottom">
+                <div class="one">
+                  <div style="padding-top:0px"></div>
+                  <div class="two" id="hyperthumbnail_image_after" style="opacity:1; padding-top:0px">
+                    <img src="images/qi_cvpr_2023_hyperthumbnail_after.png" width="230">
+                  </div>
+                  <div class="two" id="hyperthumbnail_image_before" style="opacity:0; padding-top:10px">
+                    <img src="images/qi_cvpr_2023_hyperthumbnail_before.png" width="230">
+                  </div>
+                </div>
+                <script type="text/javascript">
+                function hyperthumbnail_start() {
+                    document.getElementById('hyperthumbnail_image_after').style.opacity = "1";
+                    document.getElementById('hyperthumbnail_image_before').style.opacity = "0";
+                }
+    
+                function hyperthumbnail_stop() {
+                    document.getElementById('hyperthumbnail_image_after').style.opacity = "0";
+                    document.getElementById('hyperthumbnail_image_before').style.opacity = "1";
+                }
+                videodepth_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Hyperthumbnail: Real-time 6K Image Rescaling with Rate-distortion Optimization</papertitle>
+              <br> 
+              <a href="https://chenyangqiqi.github.io/">Chenyang Qi*,</a>
+              Xin Yang*, 
+              <strong>Ka Leong Cheng,</strong>
+              <a href="https://www.yingcong.me/">Ying-Cong Chen,</a>
+              <a href="http://cqf.io">Qifeng Chen</a>
+              <br>
+              Computer Vision and Pattern Recognition Conference (CVPR), 2023
+              <br>
+              <!-- <a> Details are coming soon</a> -->
+              <a href="https://arxiv.org/abs/2304.01064">arXiv</a> / 
+              <a href="data/qi_cvpr_2023_hyperthumbnail.bib">bibtex</a>
+              <!-- <a href="https://github.com/ChenyangQiQi/hyperthumbnail">code</a> / 
+              <a href="https://chenyangqiqi.github.io/hyperthumbnail/index.html">project page</a> -->
+              <p></p>
+              <p>We propose Hyperthumbnail to do image upscaling with learnable frequency-domain quantization and achieve 6K real-time speed with best rate-distortion.
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="optimizing_stop()" onmouseover="optimizing_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one" style="text-align:center;">
+              <div class="one">
+                <div style="padding-top:0px"></div>
                 <div class="two" id='optimizing_image'>
-                    <img src='images/cheng_eccv_2022_after.png' width=100%></div>
-                <img src='images/cheng_eccv_2022_before.png' width=100%>
+                  <img src='images/cheng_eccv_2022_after.png' width="230">
+                </div>
+                <img src='images/cheng_eccv_2022_before.png' width="230">
               </div>
               <script type="text/javascript">
                 function optimizing_start() {
@@ -74,9 +122,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://github.com/felixcheng97/DenoiseCompression">
-                <papertitle>Optimizing Image Compression via Joint Learning with Denoising</papertitle>
-              </a>
+              <papertitle>Optimizing Image Compression via Joint Learning with Denoising</papertitle>
               <br>
               <strong>Ka Leong Cheng*</strong>,
               <a href="https://scholar.google.com/citations?user=XB8oP_gAAAAJ&hl=en">Yueqi Xie*</a>,
@@ -99,11 +145,14 @@
           <tr onmouseout="iicnet_stop()" onmouseover="iicnet_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img class="two" src='images/cheng_iccv_2021_iicnet_before.jpg'>
-                <div class="three" id='iicnet_image'><video width=100% height=100% muted autoplay loop>
-                <source src="images/cheng_iccv_2021_iicnet_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
+                <div style="padding-top:10px"></div>
+                <div class="two" id='iicnet_image'>
+                  <video width="230" muted autoplay loop>
+                  <source src="images/cheng_iccv_2021_iicnet_after.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src='images/cheng_iccv_2021_iicnet_before.jpg' width="230">
               </div>
               <script type="text/javascript">
                 function iicnet_start() {
@@ -116,9 +165,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://github.com/felixcheng97/IICNet">
-                <papertitle>IICNet: A Generic Framework for Reversible Image Conversion</papertitle>
-              </a>
+              <papertitle>IICNet: A Generic Framework for Reversible Image Conversion</papertitle>
               <br>
               <strong>Ka Leong Cheng*</strong>,
               <a href="https://scholar.google.com/citations?user=XB8oP_gAAAAJ&hl=en">Yueqi Xie*</a>,
@@ -141,9 +188,11 @@
           <tr onmouseout="enhanced_stop()" onmouseover="enhanced_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
+                <div style="padding-top:0px"></div>
                 <div class="two" id='enhanced_image'>
-                    <img src='images/xie_acmmm_2021_after.jpg' width="160"></div>
-                <img src='images/xie_acmmm_2021_before.jpg' width="160">
+                  <img src='images/xie_acmmm_2021_after.jpg' width="230">
+                </div>
+                <img src='images/xie_acmmm_2021_before.jpg' width="230">
               </div>
               <script type="text/javascript">
                 function enhanced_start() {
@@ -156,9 +205,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://github.com/xyq7/InvCompress">
-                <papertitle>Enhanced Invertible Encoding for Learned Image Compression</papertitle>
-              </a>
+              <papertitle>Enhanced Invertible Encoding for Learned Image Compression</papertitle>
               <br>
               <a href="https://scholar.google.com/citations?user=XB8oP_gAAAAJ&hl=en">Yueqi Xie*</a>,
               <strong>Ka Leong Cheng*</strong>,
@@ -180,11 +227,13 @@
           <tr onmouseout="fully_stop()" onmouseover="fully_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img class="two" src='images/cheng_eccv_2020_fully.jpg'>
-                <div class="three" id='fully_image'><video width=100% height=100% muted autoplay loop>
-                <source src="images/cheng_eccv_2020_fully.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
+                <div style="padding-top:10px"></div>
+                <div class="two" id='fully_image'><video width="230" muted autoplay loop>
+                  <source src="images/cheng_eccv_2020_fully.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src='images/cheng_eccv_2020_fully.jpg' width="230">
               </div>
               <script type="text/javascript">
                 function fully_start() {
@@ -197,9 +246,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2007.12402">
-                <papertitle>Fully Convolutional Networks for Continuous Sign Language Recognition</papertitle>
-              </a>
+              <papertitle>Fully Convolutional Networks for Continuous Sign Language Recognition</papertitle>
               <br>
               <strong>Ka Leong Cheng</strong>,
               <a href="https://scholar.google.com/citations?user=7wGwYg4AAAAJ&hl=en">Zhaoyang Yang</a>,
