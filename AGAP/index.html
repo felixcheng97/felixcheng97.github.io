@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="AGAP">
+  <meta property="og:title" content="AGAP"/>
+  <meta property="og:description" content="AGAP: Learning Naturally Aggregated Appearance for Efficient 3D Editing"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/teaser.jpg"/>
+  <meta property="og:image:width" content="2412"/>
+  <meta property="og:image:height" content="1394"/>
+
+
+  <meta name="twitter:title" content="AGAP">
+  <meta name="twitter:description" content="AGAP: Learning Naturally Aggregated Appearance for Efficient 3D Editing">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/teaser.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="3D-Editing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>AGAP</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="./static/js/slider.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Learning Naturally Aggregated Appearance for Efficient 3D Editing</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://felixcheng97.github.io/">Ka Leong Cheng</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://github.com/qiuyu96">Qiuyu Wang</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://vivianszf.github.io/">Zifan Shi</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=hMDQifQAAAAJ">Kecheng Zheng</a><sup>2,3</sup>,</span>
+            <span class="author-block">
+              <a href="https://justimyhxu.github.io">Yinghao Xu</a><sup>2,4</sup>,</span>              
+            <span class="author-block">
+              <a href="https://ken-ouyang.github.io/">Hao Ouyang</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://cqf.io/">Qifeng Chen</a><sup>1†</sup>,</span>
+            <span class="author-block">
+              <a href="https://shenyujun.github.io/">Yujun Shen</a><sup>2†</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>HKUST</span>&ensp;
+            <span class="author-block"><sup>2</sup>Ant Group</span>&ensp;
+            <span class="author-block"><sup>3</sup>CAD&CG, ZJU</span>&ensp;
+            <span class="author-block"><sup>4</sup>Stanford</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://klchengad.student.ust.hk/research/agap/paper.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Arxiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://klchengad.student.ust.hk/research/agap/paper.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/felixcheng97/AGAP"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://youtube"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Begin teaser video. -->  
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div">
+      <video class="video" id="Teaser" width="50%" loop playsinline autoPlay muted src="./static/videos/teaser_compressed.mp4" onplay="resizeAndPlay(this)"></video>
+      <canvas width="150" height="150" class="videoMerge" id="TeaserMerge"></canvas>
+    </div>
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Efficient</span> <span class="dnerf">3D</span> <span class="dnerf">Editing</span> with the learned canonical image and projection field. Slide for comparison.<br>
+        The novel view videos without editing is provided on the left.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Neural radiance fields, which represent a 3D scene as a color field and a density field, 
+            have demonstrated great progress in novel view synthesis yet are unfavorable for editing due to the implicitness. 
+            In view of such a deficiency, we propose to replace the color field with an explicit 2D appearance aggregation, 
+            also called canonical image, with which users can easily customize their 3D editing via 2D image processing. 
+            To avoid the distortion effect and facilitate convenient editing, we complement the canonical image 
+            with a projection field that maps 3D points onto 2D pixels for texture lookup. 
+            This field is carefully initialized with a pseudo canonical camera model and optimized 
+            with offset regularity to ensure <b>naturalness</b> of the aggregated appearance. 
+            Extensive experimental results on three datasets suggest that our representation, dubbed <b>AGAP</b>, 
+            well supports various ways of 3D editing (<i>e.g.</i>, stylization, interactive drawing, and content extraction) 
+            with no need of re-optimization for each case, demonstrating its generalizability and efficiency.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Video</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Method</h2>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/pipeline.jpg" alt="AGAP Pipeline"/>
+        <h2 class="content has-text-justified">
+          The overview of our method. AGAP consists of two components: 
+          (1) an explicit 3D density grid &#934;<sub>G</sub> to estimate geometry for density &#963;;
+          (2) an explicit canonical image &#934;<sub>I</sub> with an associated view-dependent projection field <i>P</i> 
+          to aggregate appearance for color <b>&#x63;</b>. 
+          By performing 2D image processing on the canonical image, our method enables various editing 
+          (<i>e.g.</i>, content extraction, interactive drawing, and scene stylization) 
+          through volume rendering without the need for re-optimization.
+       </h2>
+     </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">3D Scene Editing</h2>
+      <div class="hero-body">
+        <img src="static/images/teaser.jpg" alt="3D Scene Editing Teaser"/>
+      </div>
+      <h2 class="title is-4">Scene Stylization</h2>
+      <div id="results-carousel1" class="carousel results-carousel">
+        <div class="item item-video">
+          <video poster="" id="video-a01" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/style/scene04_style_frozen_film_by_disney_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-a02" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/style/scene04_style_pixel_art_style_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-a03" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/style/flower_style_inkpainting_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-a04" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/style/leaves_style_winter_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-a05" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/style/trex_style_flaming_fire_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-a06" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/style/trex_style_mechakaiju_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-a07" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/style/fortress_style_iceberg_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video-a08" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/style/horns_style_cyberpunk_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-a09" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/style/orchids_style_anime_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-a10" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/style/face_style_superman_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-4">Content Extraction</h2>
+      <div id="results-carousel2" class="carousel results-carousel">
+        <div class="item item-video">
+          <video poster="" id="video-b01" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/extract/flower_extract_fg_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-b02" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/extract/flower_style_inkpainting_extract_fg_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-b03" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/extract/flower_extract_bg_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-b04" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/extract/scene05_extract_fg_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-b05" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/extract/fortress_extract_fg_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-b06" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/extract/room_extract_fg_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-b07" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/extract/face_extract_fg_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-4">Texture Editing</h2>
+      <div id="results-carousel3" class="carousel results-carousel">
+        <div class="item item-video">
+          <video poster="" id="video-c01" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/draw/fern_draw_cvpr_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-c02" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/draw/fern_draw_dove_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-c03" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/draw/fern_draw_flower_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-c04" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/draw/scene09_draw_objects_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-c05" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/draw/face_draw_rainbow_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video">
+          <video poster="" id="video-c06" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/draw/flower_draw_ladybird_compressed.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+<pre><code>@article{cheng2023learning,
+    title   = {Learning Naturally Aggregated Appearance for Efficient 3D Editing},
+    author  = {Ka Leong Cheng and Qiuyu Wang and Zifan Shi and Kecheng Zheng and Yinghao Xu and Hao Ouyang and Qifeng Chen and Yujun Shen},
+    journal = {arXiv:????.?????},
+    website = {https://felixcheng97.github.io/AGAP/},
+    year    = {2023},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+bulmaCarousel.attach('#results-carousel1', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    infinite: true,
+    autoplay: false,
+});
+bulmaCarousel.attach('#results-carousel2', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    infinite: true,
+    autoplay: false,
+});
+bulmaCarousel.attach('#results-carousel3', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    infinite: true,
+    autoplay: false,
+});
+</script>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+<!-- Default Statcounter code for AGAP Project Page
+https://felixcheng97.github.io/AGAP -->
+<script type="text/javascript">
+  var sc_project=12948154; 
+  var sc_invisible=1; 
+  var sc_security="f293c6ff"; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js"
+  async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics
+  Made Easy - Statcounter" href="https://statcounter.com/"
+  target="_blank"><img class="statcounter"
+  src="https://c.statcounter.com/12948154/0/f293c6ff/1/"
+  alt="Web Analytics Made Easy - Statcounter"
+  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+  <!-- End of Statcounter Code -->
+
+</body>
+</html>
