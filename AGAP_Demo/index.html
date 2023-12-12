@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AGAP Demo</title>
+    <link href="./assets/css/my.css" rel="stylesheet" type="text/css"/>
+<style>
+  body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+      background-color: black;
+  }
+</style>
+</head>
+<body>
+    <div class="video-container">
+    <video muted autoplay loop controls="false" poster="./video/frame0.png">
+        <source src="./video/demo_video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+
+  <div class="text-container">
+      <div class="title-container">
+        <h1 class="ml1">
+          <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters">AGAP</span>
+            <span class="line line2"></span>
+          </span>
+        </h1>
+      </div>
+
+      <div class="author-container">
+          <h1 class="ml16"></h1>
+          <div class="button-container">
+          <button class="button" onclick='window.open("https://arxiv.org/abs/2312.06657")'><span>Paper</span></button>
+          <button class="button" onclick='window.open("https://felixcheng97.github.io/AGAP/")' style="background-color:#48D1CC"><span>Project</span></button>
+          </div>
+      </div>
+  </div>
+
+
+
+<!-- Core Javascripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<!-- Theme Javascripts -->
+<script src="./assets/js/theme.js"></script>
+<script src="./assets/js/my.js"></script>
+<script>
+!function(n) {
+ var e = n.document,
+ t = e.documentElement,
+ i = 640,
+ d = i / 100,
+ o = "orientationchange" in n ? "orientationchange": "resize",
+ a = function() {
+ var n = t.clientWidth || 320;
+ n > 640 && (n = 640),
+ t.style.fontSize = n / d + "px"
+ };
+ e.addEventListener && (n.addEventListener(o, a, !1), e.addEventListener("DOMContentLoaded", a, !1))
+} (window);
+</script>
+</body>
+
+
+</html>
+
