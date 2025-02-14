@@ -62,11 +62,11 @@
             <span class="author-block">
               <a href="https://vivianszf.github.io/">Zifan Shi</a><sup>1,2</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=hMDQifQAAAAJ">Kecheng Zheng</a><sup>2,3</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=hMDQifQAAAAJ">Kecheng Zheng</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://justimyhxu.github.io">Yinghao Xu</a><sup>2,4</sup>,</span>              
+              <a href="https://justimyhxu.github.io">Yinghao Xu</a><sup>2,3</sup>,</span>              
             <span class="author-block">
-              <a href="https://ken-ouyang.github.io/">Hao Ouyang</a><sup>1,2</sup>,</span>
+              <a href="https://ken-ouyang.github.io/">Hao Ouyang</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://cqf.io/">Qifeng Chen</a><sup>1†</sup>,</span>
             <span class="author-block">
@@ -76,8 +76,7 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>HKUST</span>&ensp;
             <span class="author-block"><sup>2</sup>Ant Group</span>&ensp;
-            <span class="author-block"><sup>3</sup>CAD&CG, ZJU</span>&ensp;
-            <span class="author-block"><sup>4</sup>Stanford</span>
+            <span class="author-block"><sup>3</sup>Stanford</span>
           </div>
 
           <div class="column has-text-centered">
@@ -92,7 +91,7 @@
                   <span>Arxiv</span>
                 </a>
               </span>
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://klchengad.student.ust.hk/research/agap/paper.pdf"
                     class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -100,7 +99,7 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/felixcheng97/AGAP"
@@ -112,16 +111,15 @@
                 </a>
               </span>
               <!-- Video Link. -->
-              <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://felixcheng97.github.io/AGAP_Demo/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
-                  <span>High-Res Video</span>
+                  <span>Youtube</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -158,15 +156,14 @@
           <p>
             Neural radiance fields, which represent a 3D scene as a color field and a density field, 
             have demonstrated great progress in novel view synthesis yet are unfavorable for editing due to the implicitness. 
-            In view of such a deficiency, we propose to replace the color field with an explicit 2D appearance aggregation, 
-            also called canonical image, with which users can easily customize their 3D editing via 2D image processing. 
-            To avoid the distortion effect and facilitate convenient editing, we complement the canonical image 
-            with a projection field that maps 3D points onto 2D pixels for texture lookup. 
-            This field is carefully initialized with a pseudo canonical camera model and optimized 
-            with offset regularity to ensure <b>naturalness</b> of the aggregated appearance. 
-            Extensive experimental results on three datasets suggest that our representation, dubbed <b>AGAP</b>, 
-            well supports various ways of 3D editing (<i>e.g.</i>, stylization, interactive drawing, and content extraction) 
-            with no need of re-optimization for each case, demonstrating its generalizability and efficiency.
+            This work studies the task of efficient 3D editing, where we focus on <b>editing speed</b> and <b>user interactivity</b>. 
+            To this end, we propose to learn the color field as an explicit 2D appearance aggregation, also called canonical image, 
+            with which users can easily customize their 3D editing via 2D image processing. 
+            We complement the canonical image with a projection field that maps 3D points onto 2D pixels for texture query. 
+            This field is initialized with a pseudo canonical camera model and optimized with offset regularity to ensure the <b>naturalness</b> of the canonical image. 
+            Extensive experiments on different datasets suggest that our representation, dubbed <b>AGAP</b>, 
+            well supports various ways of 3D editing (<i>e.g.</i>, stylization, instance segmentation, and interactive drawing). 
+            Our approach demonstrates remarkable efficiency by being at least 20 times faster per edit compared to existing NeRF-based editing methods.
           </p>
         </div>
       </div>
@@ -208,7 +205,7 @@
           (2) an explicit canonical image &#934;<sub>I</sub> with an associated view-dependent projection field <i>P</i> 
           to aggregate appearance for color <b>&#x63;</b>. 
           By performing 2D image processing on the canonical image, our method enables various editing 
-          (<i>e.g.</i>, content extraction, interactive drawing, and scene stylization) 
+          (<i>e.g.</i>, instance segmentation, interactive drawing, and scene stylization) 
           through volume rendering without the need for re-optimization.
        </h2>
      </div>
@@ -284,12 +281,12 @@
             type="video/mp4">
           </video>
         </div> -->
-        <div class="item item-video">
+        <!-- <div class="item item-video">
           <video poster="" id="video-a10" autoplay controls muted loop height="100%">
             <source src="static/videos/style/face_style_superman_compressed.mp4"
             type="video/mp4">
           </video>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -301,7 +298,7 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-4">Content Extraction</h2>
+      <h2 class="title is-4">Instance Segmentation</h2>
       <div id="results-carousel2" class="carousel results-carousel">
         <div class="item item-video">
           <video poster="" id="video-b01" autoplay controls muted loop height="100%">\
@@ -339,12 +336,12 @@
             type="video/mp4">
           </video>
         </div>
-        <div class="item item-video">
+        <!-- <div class="item item-video">
           <video poster="" id="video-b07" autoplay controls muted loop height="100%">
             <source src="static/videos/extract/face_extract_fg_compressed.mp4"
             type="video/mp4">
           </video>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -360,7 +357,7 @@
       <div id="results-carousel3" class="carousel results-carousel">
         <div class="item item-video">
           <video poster="" id="video-c01" autoplay controls muted loop height="100%">
-            <source src="static/videos/draw/fern_draw_cvpr_compressed.mp4"
+            <source src="static/videos/draw/fern_draw_agap_compressed.mp4"
             type="video/mp4">
           </video>
         </div>
@@ -405,12 +402,12 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-<pre><code>@article{cheng2023learning,
-    title   = {Learning Naturally Aggregated Appearance for Efficient 3D Editing},
-    author  = {Ka Leong Cheng and Qiuyu Wang and Zifan Shi and Kecheng Zheng and Yinghao Xu and Hao Ouyang and Qifeng Chen and Yujun Shen},
-    journal = {arXiv:2312.06657},
-    website = {https://felixcheng97.github.io/AGAP/},
-    year    = {2023},
+<pre><code>@inproceedings{cheng2025learning,
+    title     = {Learning Naturally Aggregated Appearance for Efficient 3D Editing}, 
+    author    = {Ka Leong Cheng and Qiuyu Wang and Zifan Shi and Kecheng Zheng and Yinghao Xu and Hao Ouyang and Qifeng Chen and Yujun Shen},
+    booktitle = {Proceedings of the International Conference on 3D Vision},
+    year      = {2025},
+    pages     = {},
 }</code></pre>
   </div>
 </section>
